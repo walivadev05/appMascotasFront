@@ -1,0 +1,16 @@
+.card {
+    margin-top: 10px;
+}
+
+.mat-grid-tile-content{
+   top: 10px;
+}
+.mat-mdc-form-field {
+    width: 100%;
+    margin: 5px;    
+    margin-top: 10px;
+}
+
+.btnAceptar{
+    margin-right: 15px;
+}
