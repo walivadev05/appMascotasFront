@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 //Modulo
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 //Angular Material
@@ -26,6 +26,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { SpinnerComponent } from './spinner/spinner.component';
 
 
+
   
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatSnackBarModule,
     MatProgressBarModule,
     MatGridListModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   exports:[
     CommonModule,
@@ -62,7 +64,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
     MatProgressBarModule,
     SpinnerComponent,
     MatGridListModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 
 })

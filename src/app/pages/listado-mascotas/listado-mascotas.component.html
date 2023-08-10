@@ -43,10 +43,12 @@
                     color="primary">Agregar</button>
             </th>
             <td mat-cell *matCellDef="let element">
-                <mat-icon [routerLink]="['/vermascota',1]" matTooltip="Ver" class="search" fontIcon="search"></mat-icon>
-                <mat-icon [routerLink]="['/editarmascota',1]" matTooltip="Editar" class="edit"
+                <mat-icon [routerLink]="['/vermascota/',element.id]" matTooltip="Ver" class="search"
+                    fontIcon="search"></mat-icon>
+                <mat-icon [routerLink]="['/editarmascota/',element.id]" matTooltip="Editar" class="edit"
                     fontIcon="edit"></mat-icon>
-                <mat-icon (click)="eliminarMascota()" matTooltip="Eliminar" class="delete" fontIcon="delete"></mat-icon>
+                <mat-icon (click)="eliminarMascota(element.id)" matTooltip="Eliminar" class="delete"
+                    fontIcon="delete"></mat-icon>
             </td>
         </ng-container>
 

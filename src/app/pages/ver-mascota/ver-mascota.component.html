@@ -1,15 +1,16 @@
 <div class="title">
     <h1>Ver Mascota</h1>
 </div>
-
-<div class="container">
+<!--<div *ngIf="mascota$ | async as mascota" class="container"></div>-->
+<div *ngIf="mascota != null" class="container">
     <mat-card class="card">
-        <mat-card-title>DRACO</mat-card-title>
+       <!-- {{mascota | json}}-->
+        <mat-card-title>{{mascota.nombre}}</mat-card-title>
         <mat-card-content>
-            <P><strong>Edad:</strong>2 AÑOS</P>
-            <P><strong>Raza:</strong>PITBULL</P>
-            <P><strong>color:</strong>ATIGRADO</P>
-            <P><strong>Peso:</strong>38</P>
+            <P><strong>Edad:</strong>{{mascota.edad}}</P>
+            <P><strong>Raza:</strong>{{mascota.raza}}</P>
+            <P><strong>color:</strong>{{mascota.color}}</P>
+            <P><strong>Peso:</strong>{{mascota.peso}}</P>
         </mat-card-content>
         <mat-card-actions>
             <button routerLink="/listarmascota" mat-raised-button>Volver</button>
